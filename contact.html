@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8" />
 
-<!-- double-check about this viewport code -->
+<!-- Double-check about this viewport code -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Jennifer Gaumnitz</title>
 
 <!--Favicon coding-->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-<!--Link to Bootstrap-->
+<!--Links to Bootstrap stylesheet and js-->
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 
@@ -23,7 +29,6 @@
 
 <!-- start nav -->
 
-<div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <span class="navbar-brand mb-1 h1" style="background-color:#4aaaa5; color:white; font-size:2rem; padding: 25px">Jennifer Gaumnitz</span>
       
@@ -33,69 +38,81 @@
       </button>
      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=#>Contact<span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
+        <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+             <a class="nav-link" href="index.html">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="portfolio.html">Portfolio</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href=#>Contact<span class="sr-only">(current)</span></a>
+           </li>
+         </ul>
       </div>
   </nav>
-</div>
+
 <!-- end nav-->
 
-<!--div for gray background-->
+<!--div for gray background image with border at top below nav bar-->
 
 <div class="container-fluid">
-  <div class="row" style="background:transparent url('./images/smooth_wall.png') no-repeat center center /cover">
-      <div class="col-lg-12">
-  </div>
 
-  <div class="container"> 
+  <div class="row" style="background:transparent url('./assets/images/smooth_wall.png') no-repeat center center /cover">
+  
+    <div class="col-lg-12">
+
+<!--div for white box on top of body background-->  
+
     <div class="row">
-      <div class="col-md-12">
-          <div class="card">
-             <div class="card-header" style="color:#4aaaa5; border-bottom:#cccccc 2px solid">
-                <h2>Contact</h2>
-           </div>
+          <div class="col-md-12" style="padding-top: 20px;">
+             <div class="card">
+                 <div class="card-header" style="color:#4aaaa5; border-bottom:#cccccc 2px solid">
+                  <h2>Contact</h2>
+              </div>
 
-<form>
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="name" class="form-control" id="name" placeholder="First and last name">
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-      </div>
-    <!-- <div class="form-group">
-      <label for="message">Message</label>
-      <input type="message" class="form-control" id="message" placeholder="Your message here">
-      </div> -->
-    <div class="form-group">
-       <label for="form-text">Message</label>
-       <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Your message here"></textarea>
-      </div>
-    <button type="button" class="btn btn-info">Submit</button>
-  </form>
-  </div>
+<!-- Start of form -->
+           <form>
+                <div class="form-group" style="padding:20px;">
+                   <label for="name">Name</label>
+                   <input type="text" class="form-control" id="name" placeholder="First and last name">
+                </div>
+
+                <div class="form-group" style="padding:20px;">
+                   <label for="email">Email</label>
+                   <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+               </div>
+    
+               <div class="form-group" style="padding:20px;">
+                   <label>Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Your message here"></textarea>
+               </div>
+        
+               <button type="button" class="btn btn-info">Submit</button>
+            </form>
+
+            </div>
+          </div>
+
 
 <!--Footer-->
-  <div class="row">
-    <div class=col-lg-12>
-       <div class="card-footer" style="color:#ffffff; background-color:#666666; border-top: 8px solid #4aaaa5; text-align: center; width:100%;">
-       <small>&copy; 2019</small>
-      <br>
-      <small>Last updated: September 10, 2019 at 12:00 AM</small>         
+              <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-lg-12">
+                        <div style="color:#ffffff; background-color:#666666; border-top: 8px solid #4aaaa5; text-align: center; width:100%;">
+                            <small>&copy; 2019</small>
+                            <br>
+                            <small>Last updated: September 12, 2019 at 11:30 AM</small>         
+                      </div>
+                  </div>
+                  </div>
+              </div>
+
       </div>
-   </div>
- </div>
+    </div>
+  </div>
+</div>
 
-  </body>
+</body>
 
-  </html>
+</html>

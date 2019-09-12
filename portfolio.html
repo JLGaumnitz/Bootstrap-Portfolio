@@ -12,87 +12,98 @@
     <title>Jennifer Gaumnitz</title>
 
 <!--Favicon coding-->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-<!--Link to Bootstrap-->
+<!--Links to Bootstrap stylesheet and js-->
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
  <!-- start nav -->
-    <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <span class="navbar-brand mb-1 h1" style="background-color:#4aaaa5; color:white; font-size:2rem; padding: 25px">Jennifer Gaumnitz</span>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-               
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- end nav-->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <span class="navbar-brand mb-1 h1" style="background-color:#4aaaa5; color:white; font-size:2rem; padding: 25px">Jennifer Gaumnitz</span>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<!-- end nav-->
         
-<!--div for gray background with border at top below nav bar-->
-        
+<!--div for gray background image with border at top below nav bar-->
+
 <div class="container-fluid">
-    <div class="row" style="background:transparent url('./images/smooth_wall.png') no-repeat center center /cover">
-                <div class="col-lg-12">
-        
+  <div class="row" style="background:transparent url('./assets/images/smooth_wall.png') no-repeat center center /cover">
+      <div class="col-lg-12">
+
 <!--div for white box on top of body background-->  
-          
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header" style="color:#4aaaa5; border-bottom:#cccccc 2px solid">
-                      <h2>Portfolio</h2>
-             </div>
+
+  <div class="row">
+    <div class="col-md-12" style="padding-top: 20px;">
+       <div class="card">
+           <div class="card-header" style="color:#4aaaa5; border-bottom:#cccccc 2px solid">
+              <h2>Portfolio</h2>
+       </div>
 
 <!-- div for portfolio images -->
+<!-- need to figure out how to make them not overlap when moving screen to smaller size -->
+
 <div class="row">
-    <div class="column">
-          <img src="./images/image_1.jpg">
-          <img src="./images/image_3.jpg">
-          <img src="./images/image_5.jpg">
+    <div class="col-md-3">
+         <img class="img-responsive" src="https://via.placeholder.com/350/FFFF00/000000" style="margin:5%" alt="Portfolio Image Placeholder">
+
+         <img class="img-responsive" src="https://via.placeholder.com/350/FFFF00/000000" style="margin:5%" alt="Portfolio Image Placeholder">
+
+         <img class="img-responsive" src="https://via.placeholder.com/350/FFFF00/000000" style="margin:5%" alt="Portfolio Image Placeholder">
     </div>
-    <div class="column">
-          <img src="./images/image_2.jpg">
-          <img src="./images/image_4.jpg">
-     </div>
 
+    <div class="col-md-3">
+      <img class="img-responsive" src="https://via.placeholder.com/350" style="margin:5%" alt="Portfolio Image Placeholder">
 
+      <img class="img-responsive" src="https://via.placeholder.com/350" style="margin:5%" alt="Portfolio Image Placeholder">
+    </div>
 
+</div>
+</div>
      
 <!--Footer-->
-<div class="row">
-        <div class=col-lg-12>
-           <div class="card-footer" style="color:#ffffff; background-color:#666666; border-top: 8px solid #4aaaa5; text-align: center; width:100%;">
-           <small>&copy; 2019</small>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12">
+         <div style="color:#ffffff; background-color:#666666; border-top: 8px solid #4aaaa5; text-align: center; width:100%;">
+         <small>&copy; 2019</small>
           <br>
-          <small>Last updated: September 10, 2019 at 12:00 AM</small>         
-          </div>
-       </div>
-     </div>
+          <small>Last updated: September 12, 2019 at 11:30 AM</small>         
+         </div>
+   </div>
+ </div>
+</div>
 
-    </body>
+</body>
 
 </html>
-        

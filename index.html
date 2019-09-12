@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>  
     <meta charset="UTF-8" />
 
 <!-- double-check about this viewport code -->
@@ -11,20 +11,24 @@
     <title>Jennifer Gaumnitz</title>
 
 <!--Favicon coding-->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-<!--Link to Bootstrap-->
+<!--Links to Bootstrap stylesheet and js-->
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
 <!-- start nav -->
-<div class="container">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <span class="navbar-brand mb-1 h1" style="background-color:#4aaaa5; color:white; font-size:2rem; padding: 25px">Jennifer Gaumnitz</span>
         
@@ -34,44 +38,46 @@
         </button>
        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
-</div>
+
 <!-- end nav-->
 
-<!--div for gray background with border at top below nav bar-->
+<!--div for gray background image with border at top below nav bar-->
 
  <div class="container-fluid">
-    <div class="row" style="background:transparent url('./images/smooth_wall.png') no-repeat center center /cover">
+    <div class="row" style="background:transparent url('./assets/images/smooth_wall.png') no-repeat center center /cover">
         <div class="col-lg-12">
 
   <!--div for About Me white box on top of body background-->  
   
     <div class="row">
-      <div class="col-md-12">
-          <div class="card">
+      <div class="col-md-12" style="padding-top: 20px;">
+         <div class="card">
              <div class="card-header" style="color:#4aaaa5; border-bottom:#cccccc 2px solid">
                 <h2>About Me</h2>
-           </div>
+         </div>
 
-      <div class="row">
-           <div class="card-body">
-              <div class="col-md-3">
-                  <div class="float-md-left .mr-3">
-                     <img src="./images/JLG_square.png" alt="Jennifer Gaumnitz" class="img-thumbnail">
-                  </div>
-                </div>
-              <div class="col-md-9">
+    <div class="row">
+      <div class="card-body">
+          <div class="col-md-3">
+              <div class="float-md-left .mr-3">
+                  <img src="./assets/images/JLG_square.png" alt="Jennifer Gaumnitz" class="img-thumbnail" style="padding-right: 20px; border: 0">
+              </div>
+          </div>
+
+          <div class="col-md-9">
                 <p>I am a science journalist. Most recently, I was a <a href="http://www.dvm360.com/jennifer-gaumnitz-senior-content-specialist" target="_blank">senior content specialist with dvm360.com.</a> I worked for the organization in its various incarnations for more than 34 years, for several years serving as managing editor of the journal <em>Veterinary Medicine</em>. I also worked on production of or edited three books: <em>Small Animal Clinical Nutrition,</em> 4th edition; <em>Field Guide to Colic Management in the Horse</em>; and <em>The U.S. Animal Health Industry: Its Pioneers and Their Legacy of Innovation.</em></p>
                 <br>
                 <p>I was born in Naperville, Illinois, grew up in Dubuque, Iowa, and have lived in the Kansas City metropolitan area for 35 years. I have a Bachelor of Science degree in Journalism and Mass Communication with an emphasis in Science Writing and a minor in Zoology from Iowa State University. While at Iowa State, I was the editor of <em>The Iowa Engineer</em>.</p>
@@ -87,26 +93,31 @@
                       <li>When I joined Stack Overflow recently, I already had a reputation of >20,000 (top 1%) on its sister site English Language and Usage Stack Exchange.</li>
                       <li>I am always learning.</li>
                     </ul>
-                  </p>
+            
                 </div>
               </div>
             </div>
         </div>
      </div>
- </div>
-                    
+  </div>
+</div>     
+</div>
+</div> 
+
 <!-- Perhaps I will want to update text to include why I want to work in web development in addition to listing experience in content creation.-->
 
 <!--Footer-->
-  <div class="row">
-    <div class=col-lg-12>
-       <div class="card-footer" style="color:#ffffff; background-color:#666666; border-top: 8px solid #4aaaa5; text-align: center; width:100%;">
-       <small>&copy; 2019</small>
-      <br>
-      <small>Last updated: September 10, 2019 at 12:00 AM</small>         
-      </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+           <div style="color:#ffffff; background-color:#666666; border-top: 8px solid #4aaaa5; text-align: center; width:100%;">
+           <small>&copy; 2019</small>
+            <br>
+            <small>Last updated: September 12, 2019 at 11:30 AM</small>         
+           </div>
+     </div>
    </div>
- </div>
+</div>
 
 </body>
 
